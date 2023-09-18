@@ -1,7 +1,7 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from cnnClassifier import logger
+from garb_classifier import logger
 import json
 import joblib
 from ensure import ensure_annotations
@@ -13,7 +13,7 @@ import base64
 
 
 @ensure_annotations
-def read_yaml(path_to_yaml: Path) -> ConfigBox:
+def read_yaml(path_to_yaml) -> ConfigBox:
     """reads yaml file and returns
 
     Args:
